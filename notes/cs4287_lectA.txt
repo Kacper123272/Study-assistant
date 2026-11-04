@@ -1,0 +1,473 @@
+CS4287 Neural ComputingLect A: Introduction, and GOFA/PSSH.  J.J. CollinsDept. of CSISUniversity of Limerick
+2
+
+CS6482
+Introduce the lecturer 
+Outline assessment instruments
+ Walkthrough syllabus and recommended texts
+Some thoughts on Artificial Intelligence (AI) and Machine Learning (ML)
+
+Objectives
+© www.infoq.com
+3
+
+CS6482
+J.J. Collins
+j.j.Collins@ul.ie
+LM121 Computer Science Course Director
+Modules: Software Design, Deep Reinforcement Learning, and Deep Learning on MSc programmes.
+Research: 
+Evolutionary Algorithmss for automatic parallelisation of sequential code, 
+Previous work in Reinforcement Learning, Robotics, Computer Vision, Business Process Orchestration and Service Level Agreements (SLAs)  
+
+1. Lecturers
+
+Breakthrough
+4
+Breakthrough
+Google Deepmind: AlphaGo / AlphaFold
+Uses Reinforcement Learning 
+movie: www.youtube.com/watch?v=d95J8yzvjbQdeepmind.google/science/alphafold/
+
+5
+Breakthroughs
+OpenAI: solving Rubix Cube using Deep Reinforcement Learning
+https://openai.com/index/solving-rubiks-cube/
+
+6
+7
+
+(CS4287)
+20% Midterm
+Week 5
+
+
+15% CNN project
+Teams of 2.
+Distributed Week 4, due week 7.
+
+
+
+20% Deep Reinforcement Learning project
+Teams of 2.
+Distributed Week 8, due week 12.
+Extra Credit available.
+
+Final end of semester exam worth 45%
+
+
+
+Repeat: 100% Exam
+
+
+
+2. CS4287 Assessment Instruments
+© www.infoq.com
+Keeping it Real
+IF ((Normalised Marks for Assignments) / (Normalised marks for exams) > 3.3) THEN Marks for assignments set to 0
+Example: students has normalised score of 75 for assignments.
+
+
+
+
+
+Teams may be called for interview. Failure to explain code in interview results in a mark of 0 for that assignment.
+
+
+8
+2. Schedule
+9
+Tutorials starting Week 4.
+
+Office Hours
+12:00-13:00 Wednesdays in Room CS1-014.
+
+
+
+If emailing the lecturer w.r.t. CS4287, ALWAYS put CS4287 in the subject.
+
+2. Module Background: Texts
+Core
+Aurélien Géron. Hands-on machine learning with Scikit-learn, Keras, and TensorFlow: concepts, tools, and techniques to build intelligent systems, 2nd Edition, 2019. O’Reilly.
+Richard Sutton and Andrew Barto. Reinforcement Learning, 2nd Edition. 2018. The MIT Press.
+Lapan, Maxim (2018) Deep Reinforcement Learning Hands-On: Apply modern RL methods, with deep Q-networks, value iteration, policy gradients, TRPO, AlphaGo Zero and more. 2018. Packt Publishing Ltd, 
+
+Recommended
+Simon Haykin (2009) Neural Networks and Machine Learning (3rd Edition) , Pearson. 
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville (2016) Deep Learning , The MIT Press 
+
+Many many Research Papers
+
+10
+2. Syllabus for CS4287
+11
+Part 1: The Fundamentals (4 weeks)
+Introduction to the computational model of a neuron. 
+Models of Learning: Hebian, Boltzman, supervised, unsupervised, and reinforcement learning. 
+Learning in the Perceptron and its limitations. 
+Backpropagation in the Multilayer Perceptron. 
+Cross validation, generalisation, over-fitting, and analysis of the output. Hopfield networks. 
+
+Part 2: Deep Learning (4 weeks)
+Deep learning paradigms such as Convolutional Neural Networks, Long Short Term Memory, and Recurrent Neural Networks. 
+Concepts such as Dropout and Batch Normalisation will be introduced. 
+2. Syllabus for CS4287
+12
+Part 3 Reinforcement Learning (4 weeks)
+Reinforcement Learning (RL) paradigms such as Temporal Difference Methods and their implementation on neural architectures. 
+Topics: Radial-Basis Function networks, Self-Organising maps, Support Vector Machines.
+
+All done via Learning by Doing
+Applications of neural computing to a wide range of domains. 
+Examples include object identification and recognition in computer vision, financial prediction, games, etc. 
+13
+
+CS5721
+Know your history
+
+A look a Symbolic AI
+Two of Many Maps of the Discipline
+www.exxactcorp.com/blog/Deep-Learning/difference-between-ai-machine-learning-and-deep-learning
+
+www.researchgate.net/publication/357234810_Artificial_intelligence_machine_learning_for_chemical_sciences
+14
+15
+https://www.ibm.com/topics/artificial-intelligence
+History of Artificial Intelligence
+1956: The Dartmouth Conference, organized by John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, is often considered the birth of AI.
+1950s: Symbolic AI emerged in the 1950s with pioneers like Allen Newell and Herbert A. Simon
+
+They developed the Logic Theorist, the first AI program, which could prove mathematical theorems using symbolic manipulation – automated reasoning.
+
+Symbolic AI, also known as "good old-fashioned AI" (GOFAI), is an approach to artificial intelligence that relies on explicit rules and symbols to represent knowledge and perform reasoning. 
+
+It was one of the earliest paradigms in AI research and dominated the field from the 1950s through the 1980s. 
+16
+Success
+1960s: Researchers focused on developing systems that could perform tasks like theorem proving, language understanding, and problem-solving. Notable programs included the General Problem Solver (Simon, Shaw, and Newell, 1957) and SHRDLU (Winograd, 1968)
+
+1970s: The field saw significant advancements with the development of expert systems, which aimed to capture human expertise in specific domains
+17
+Automated Reasoning
+Modus Ponens in Predicate Logic:
+P
+P  Q 
+Therefore Q
+Example 
+
+If someone is a person, they are mortal
+Person(x)  Mortal(x)
+Pythagoras is a person
+Person(Pythagoras)
+Applying Modus Ponens: Pythagoras is mortal
+Mortal(Pythagoras)
+
+
+Inference: 
+Forward chaining.
+Backward chaining.
+Resolution.
+18
+Characteristics of Symbolic AI
+Symbol Manipulation: Symbolic AI operates by manipulating symbols that represent objects, actions, and relationships in the world. These symbols are explicitly defined and manipulated according to a set of rules.
+
+Rule-Based Systems: It uses predefined rules, often in the form of logical statements, to infer new information, make decisions, and solve problems. Expert systems are a prime example, where domain-specific knowledge is encoded in the form of "if-then" rules.
+
+Logic and Reasoning: Symbolic AI heavily relies on formal logic and reasoning. Techniques like propositional logic, predicate logic, and first-order logic are used to represent and process knowledge.
+
+Explicit Knowledge Representation: Knowledge is represented explicitly in structured forms such as semantic networks, frames, and ontologies. This makes it easy to understand and modify the knowledge base.
+
+Based on theories from cognitive science, logic, etc.
+
+19
+Symbolic AI: Examples
+Expert Systems: These systems use a vast set of rules to mimic the decision-making abilities of a human expert in a specific domain. For example, MYCIN - diagnosing bacterial infections.
+Natural Language Processing: Early NLP systems like ELIZA (Weizenbaum, 1967) - the Rogerian psychotherapist simulator / chatbot, used pattern matching and symbolic rules to simulate conversations.
+Theorem Proving: Programs like the Logic Theorist and Prolog-based systems were designed to prove mathematical theorems using logical reasoning.
+20
+ELIZA
+
+
+
+
+
+
+
+
+
+
+
+
+By Unknown author - File:ELIZA conversation.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=99305439
+21
+Symbolic AI / ELIZA
+Eliza was an early natural language processing program developed by Joseph Weizenbaum between 1964 and 1967 at MIT
+Pattern Matching: Eliza used a pattern matching and substitution. It processed user inputs by matching them against predefined patterns and then substituted parts of the input to generate response
+Scripts: The program's language capabilities were provided by "scripts" written in a Lisp-like representation. These scripts contained the rules and patterns for generating responses.
+DOCTOR Script: The most famous script, DOCTOR, simulated a Rogerian psychotherapist. It used non-directional questions to reflect the user's statements back to them, creating the illusion of understanding
+Eliza is an example of symbolic AI. 
+Symbolic AI relies on manipulating symbols and using explicit rules to represent knowledge and perform reasoning. Eliza used symbolic representations and pattern matching rules to simulate conversation with users.
+Eliza used a script-based approach where predefined patterns in the user's input were matched and transformed into responses based on these symbolic rules. 
+This approach exemplifies the core principles of symbolic AI, which focus on explicit, rule-based processing rather than learning from data or statistical methods.
+
+
+
+22
+23
+
+CS5721
+
+MYCIN
+
+IF
+The site of the culture is blood
+The gram stain of the organism is negative
+The morphology of the organism is rod
+The patient has a serious burn
+
+THEN
+There is suggestive evidence (0.4) that the identity of the organism is Pseudomonas
+
+   
+Expert Systems: classic symbolic reasoning
+24
+https://www.geeksforgeeks.org/what-are-the-different-components-of-an-expert-system/
+
+It process knowledge expressed in the form of rules and use symbolic reasoning in narrow domain.
+Rule from MYCIN Expert System
+IF  the stain of the organism is gram-positiveAND the morphology of the organism is coccusAND the growth conformation of the organism is clumpsTHEN (0.7) the identity of the organism is staphyloccus.
+
+Inference Engine used Backward Chaining from logic.
+
+Does not learn with experience.
+Terry Winograd: SHRDLU the Robot
+SHRDLU is an early NLP program that was developed by Terry Winograd at MIT 1968-1970.
+Perception performed by the end user – inputs relative location of “blocks”
+It could perform only three actions: MOVETO a location, GRASP  block, and UNGRASP the block currently in the hand. 
+Thus SHRDLU, which accepted high-level commands, such as `put a red block on the green block', had to discover sequences of basic actions that would achieve its goals. 
+It did this with a `Planner' program.
+Using a technique called backward chaining.
+
+(On the screen, the robot arm swings into action. Two red blocks are visible, one small, one large, as on figure above. The large one has a green cube stacked on top of it. The robot first transfers the green cube to the table top, and then picks up the red block.)
+25
+26
+
+CS5721
+Proposed by Allen Newell and Herbert A. Simon in 1976. 
+
+It is a fundamental idea in artificial intelligence (AI) and cognitive science, suggesting that a physical symbol system is both necessary and sufficient for general intelligence.
+The Physical Symbol 
+System Hypothesis (PSSH)
+PSSH
+A physical symbol system is a system that:
+
+Creates, stores, manipulates, and interprets symbols.
+
+Uses rules and operations to transform symbols into new symbols.
+
+Operates in a physical medium (e.g., a computer or the human brain).
+
+27
+PSSH
+
+Necessity and Sufficiency
+
+
+Necessity: Any system capable of general intelligence must be a physical symbol system.
+
+
+Sufficiency: A properly programmed physical symbol system can exhibit general intelligence.
+
+28
+The Physical Symbol System Hypothesis (PSSH)
+Symbols and Symbol Manipulation
+
+Symbols represent objects, concepts, or ideas.
+
+Symbol structures are collections of symbols arranged in meaningful ways (e.g., sentences, equations).
+
+Symbol processing allows reasoning, learning, and problem-solving.
+
+29
+30
+
+CS5721
+Know your history
+
+Critiquing Symbolic AI
+History: Sense Act Plan Cycle
+Brooks, R. A., “Intelligence Without Representation”, Artificial Intelligence Journal (47), 1991, pp. 139–159.
+
+Cartesian / Traditional / Old Artificial Intelligence based on SPA
+
+
+ 
+
+31
+Rodney Brooks formerly of MIT has many problems with this
+Interesting read:  Brook’s current (2026) predictions at https://rodneybrooks.com
+History: Sense Plan Act (SPA) Cycle
+32
+33
+
+CS5721
+Single cell entities - 3.5 billion years ago.
+Primates - 120 million years back.
+Predecessors to great apes - 18 million years.
+Man - 3.5 millions years.
+Agriculture - 10,000 years old.
+Writing - less than 5000 years ago.
+Suggests that reasoning, expert behaviour, etc. are all pretty simple once the essence of being is available.
+Challenge is To Be
+The ability to live in a dynamic environment.
+
+Hypothesis: Mobility, acute vision, and the ability to carry out survival related tasks are the key to the construction of intelligent machines.
+
+
+Situatedness and Embodiment
+History: Sense Plan Act Cycle
+Abstraction is good science.
+However, when applied to AI, inspires self-delusion.
+In Old AI, abstraction used to factor out motor skills and perception.
+These are the difficult tasks performed by biologically based intelligent systems.
+Example of Old AI: Winograd’s Blocks world program.
+All abstraction done by programmer i.e. state of the world specified as a set of facts (symbols).
+Assumes that models used by programs are human-oriented.
+Research indicates that perception is learned and a key aspect of intelligence.
+Requires EMODIMENT
+
+34
+History: Sense Plan Act Cycle
+35
+History: Sense Plan Act Cycle
+Decomposition into parallel activities.
+Build incremental intelligence.
+No central representation with reduced emphasis on symbolism.
+Tight integration of sensory-motor loop.
+The world is the model - situatedness and embodiment. 
+
+36
+37
+
+CS5721
+Know your history
+
+AI Winters
+1st AI Winters
+Mid 70s - 1980s: The first AI Winter occurred due to unmet expectations and reduced funding. 
+
+The Lighthill Report (1973) UK criticized AI research, stating that AI systems were impractical for real-world use. Governments, including the US and UK, cut funding for AI research.
+
+Symbolic AI systems could not scale. Symbolic systems were limited by computational power and knowledge representation issues.
+38
+2nd  AI Winters
+1987-1993: AI’s second decline was due to failure of Expert Systems and Market Collapse. However, expert systems:
+Were expensive to maintain.
+Couldn’t handle uncertainty or adapt to new situations.
+Required manual updates and extensive rule creation.
+The Japanese Fifth Generation Computer Systems (FGCS) project failed to meet expectations.
+
+39
+3rd AI Winters
+1998-2010: AI’s third decline was due to the slow progress of machine learning techniques like early neural networks and support vector machines. Neural networks suffered from:
+Lack of data: AI models required massive datasets.
+Lack of computational power: had to use expensive HPC infrastructure.
+Lack of funding: AI applications struggled to deliver commercial success, making investors hesitant.
+40
+41
+
+CS5721
+Know your history
+
+Is GOFAI dead?
+
+42
+Semester 2
+
+CS4222 Software Development
+CS4042 Games Modelling Design
+ET4162 Computer Systems Organisation 
+CS4182 Foundations of Computer Science 2
+MS4402 Computer Mathematics
+
+
+
+Novel uses of Symbolic AI
+Enhancing Reasoning and Explainability:
+
+Neuro-symbolic AI: This field combines the strengths of neural networks (like LLMs) with symbolic reasoning. LLMs can be used to generate or extract symbolic representations of knowledge, which can then be used for logical reasoning and inference. This can improve the reasoning abilities of LLMs and make their decisions more explainable.
+
+Knowledge Graphs: Symbolic AI techniques can be used to create knowledge graphs, which represent relationships between concepts and entities. These knowledge graphs can be integrated with LLMs to provide them with structured knowledge and improve their understanding of the world.
+
+43
+Semester 2
+
+CS4222 Software Development
+CS4042 Games Modelling Design
+ET4162 Computer Systems Organisation 
+CS4182 Foundations of Computer Science 2
+MS4402 Computer Mathematics
+
+
+
+Novel uses of Symbolic AI
+Addressing Limitations of LLMs:
+
+Hallucinations: LLMs can sometimes generate incorrect outputs known as hallucinations. Symbolic AI can help mitigate this by providing constraints and rules that LLMs must adhere to, ensuring that their outputs are consistent with logical reasoning and factual knowledge.
+
+Bias: LLMs can inherit biases from their training data. Symbolic AI can help identify and mitigate these biases by providing a framework for explicitly representing and reasoning about ethical considerations and fairness.
+
+44
+
+
+Novel uses of Symbolic AI
+
+Amazon AWS posted “Prevent Factual Errors From LLM Hallucinations With Mathematically Sound Automated Reasoning Checks (Preview)” by Antje Barth, AWS Amazon blog, December 3, 2024.
+45
+
+CS5721
+Know your history
+
+Shallow Connectionism
+3. History: Computer Vision
+46
+H. Rowley, S. Baluja,  and T. Kanade. Neural Network Based Face Detection. IEEE Trans on Pattern Analysis and Machine Intelligence (PAMI),  20(1):23-38, January 1998. 
+
+3. History: Autonomous Vehicles
+47
+D. Pomerlau. ALVINN: An Autonomous Land Vehicle in a Neural Network, NIPS Letters, 1989.
+
+
+
+
+
+
+48
+Nvidia GPUs that perform massive vector processing (number crunching) at a fraction of the cost of runtime on HPC
+Publicly available large scale high fidelity training sets for supervised learning. 
+And high fidelity emulators for Reinforcement Learning
+The Magnificent Seven (Big Tech) $$$$$ - investment in frameworks / libraries
+Google: Tensorflow / Keras
+Meta: Pytorch
+Apple: CoreML
+--> DEEP LEARNING
+
+
+
+
+
+Drivers in 2010s
+49
+Exercises
+
+What is intelligence?
+Distinguish AI from Machine Learning.
+What is PSSH.
+Describe one of the following: ELIZA, SHDRLU, MYCIN, Logic Theorist.
+Critique Symbolic AI
+50
+Exercises
+Explain the use of receptive fields in Rowley’s neural architecture for face detection (1997)?
+Critique Rowley et al. Face detector
+Critique Pomerlau’s ALVINN
+What caused the third AI winter?
